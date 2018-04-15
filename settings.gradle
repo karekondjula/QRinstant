@@ -1,0 +1,1 @@
+include ':qrscan', ':app', ':base', ':instantapp'
