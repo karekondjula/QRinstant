@@ -1,10 +1,11 @@
 apply plugin: 'com.android.feature'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
     baseFeature true
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -17,9 +18,23 @@ android {
     }
 }
 
+ext {
+//    playServicesVersion = '15.0.0'
+    supportLibraryVersion = '26.1.0'
+}
+
 dependencies {
+
+    implementation "com.android.support:appcompat-v7:$supportLibraryVersion"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.budiyev.android:code-scanner:1.8.4'
+    implementation 'com.android.support:customtabs:26.1.0'
+
     api 'com.android.support:appcompat-v7:26.1.0'
     api 'com.android.support.constraint:constraint-layout:1.1.0'
     application project(':app')
     feature project(':qrscan')
+}
+repositories {
+    mavenCentral()
 }

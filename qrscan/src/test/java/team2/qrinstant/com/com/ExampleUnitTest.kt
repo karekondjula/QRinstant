@@ -1,4 +1,4 @@
-package team2.qrinstant.com.qrscan
+package team2.qrinstant.com.com
 
 import org.junit.Test
 
