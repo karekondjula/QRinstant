@@ -27,7 +27,7 @@
                     android:pathPattern="/.*"
                     android:scheme="https" />
                 <data
-                    android:host="riznica.com"
+                    android:host="team2"
                     android:pathPattern="/.*"
                     android:scheme="http" />
             </intent-filter>
@@ -40,7 +40,7 @@
 
             <meta-data
                 android:name="default-url"
-                android:value="https://[...]" />
+                android:value="https://team2/example" />
 
         </activity>
 
